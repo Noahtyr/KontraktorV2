@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
            // Made a greeting for the customer
-        Toast.makeText(getApplicationContext(), "Velkommen til Kontraktor", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Welcome to Kontraktor! :)", Toast.LENGTH_SHORT).show();
     }
 
 
