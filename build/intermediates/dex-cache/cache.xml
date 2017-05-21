@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\20155237f9ec017da150699995ca6b90aad192e3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a2abc67ec03499bdf4714a6d1ae650df8c109a22\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\c98278c8f429008fd4cbad3fd90d4b4f7ea0c04f\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9241422d3557f27a54f5ecbd91bcab6d1f8f840f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\c98278c8f429008fd4cbad3fd90d4b4f7ea0c04f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33ab4506b1e12dc51df9b093017114b14e5b1220\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\7895a1cd63307881e92db6eb1cdf2e0c7fe3eb8e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f7c20bac240c83edf9555fb791aa8ff0bd6fbcb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\4f78d6565e0316e825fb0854e257d550203c3cb1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dec6087e4e5d3d0bcdbdc9eeeb6fd5119319a3ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\52e9c95803fcba33158777e50f1d73714d2e2ca4\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_93998c1b04474942b87826a5aeaed96572fb9938\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\1290b0b6af3dcacb4af6a5427f35d62e8b247a44\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_df52918824ebb25ad7cdd3ed07daa64b244b81f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\a52d11618f06285a75bcd722bf2e092dc215e293\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3befe18316c092baf9f3bb70cb07cb7d4cb65742\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\dfdf3e8cc93152606a7dd81b28655614d200207d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdf239bd328cf68c8cbc5e8954520e4cb567bb0f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\22ed540a791d538f1f278219c775de55090cb656\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_663d9c0edeaa9eec86caf91daf3386068ca65a3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\da3acf101c2a5fcc05b2e7f47838926f814b8a3d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72b5a28e0ca3314da99c9879ff214488aecfcca1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c8bab8ed4ba588a10cb3cb6d36c4e796bdbf4c01">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c24aaf86fdb1933192a08d3d0868fb9f8cd8a0f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\52e9c95803fcba33158777e50f1d73714d2e2ca4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e0d9fe9d2c4fc35ccb33c8077ccf3334dd71a8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_d178b0b193d1087683fea7c14782cb05ccf2f02b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\1290b0b6af3dcacb4af6a5427f35d62e8b247a44\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55a6db19d6f4333e126eefc1b9c1f903af13340d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\7895a1cd63307881e92db6eb1cdf2e0c7fe3eb8e\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_37962131e15bb6b911304f8bee4c8621744eecdb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\79d711f62d0402a6ee97ba4fd888248e15ac1e54\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a5689aa8a636968dae5eb9c501e255426bbb251f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ddd1d930cd4d9d0f4a075dcadd1d4323474b086f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bruger\.android\build-cache\dfdf3e8cc93152606a7dd81b28655614d200207d\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Bruger\Desktop\KontraktorV2-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1feccad08109952ec7ca897b291a1f336302180b\classes.dex" />
+    </item>
+
+</items>
