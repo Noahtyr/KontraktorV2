@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="awesomegroupkolond.kontraktor.MainActivity">
+    tools:context="awesomegroupkolond.kontraktor.LoginScreen">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
