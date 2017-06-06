@@ -1,0 +1,7 @@
+#Sun Jun 04 20:18:57 CEST 2017
+base.0=C\:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d988d935cefbbba8d2f5a60009de3c870d843ba2
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_454e1391fd6199d8fc545532644b356faf1c872d\\classes.dex
+base.1=C\:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_454e1391fd6199d8fc545532644b356faf1c872d
+file.0=C\:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d988d935cefbbba8d2f5a60009de3c870d843ba2\\classes.dex

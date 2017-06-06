@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\phill\\.android\\build-cache\\13580d032b052bc83182cde52873d31f9f9c75c2\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\phill\\.android\\build-cache\\13580d032b052bc83182cde52873d31f9f9c75c2\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\phill\\.android\\build-cache\\13580d032b052bc83182cde52873d31f9f9c75c2\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\phill\\Desktop\\aktivitet3\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\phill\\.android\\build-cache\\13580d032b052bc83182cde52873d31f9f9c75c2\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\phill\Desktop\aktivitet3\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\phill\Desktop\aktivitet3\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_454e1391fd6199d8fc545532644b356faf1c872d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\phill\Desktop\aktivitet3\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94cfcac58b22b56d860eca9c4a9e3aaf013ec08f">
+        <dex dex="C:\Users\phill\Desktop\aktivitet3\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d988d935cefbbba8d2f5a60009de3c870d843ba2\classes.dex" />
+    </item>
+
+</items>
