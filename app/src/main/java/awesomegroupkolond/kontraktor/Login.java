@@ -23,14 +23,14 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity
         implements View.OnClickListener {
-    private final String TAG = "FB_SIGNIN";
 
     //Get
-    private FirebaseAuth dbAuth;
+   private FirebaseAuth dbAuth;
     private FirebaseAuth.AuthStateListener dbAuthListener;
 
     private EditText txtPassword;
-    private EditText txtEmail;
+   private EditText txtEmail;
+    private final String TAG = "FB_SIGNIN";
 
 
     /**
@@ -41,14 +41,30 @@ public class Login extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        dbAuth = FirebaseAuth.getInstance();
+//        dbAuth = FirebaseAuth.getInstance();
+//
+//        //If currentUser is not null, it's already logged in
+//        if (dbAuth.getCurrentUser() != null) {
+//            //Proceed to Main Menu
+//            finish();
+//            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+//        }
 
-        //If currentUser is not null, it's already logged in
-        if (dbAuth.getCurrentUser() != null) {
-            //Proceed to Main Menu
-            finish();
-            startActivity(new Intent(getApplicationContext(), MainMenu.class));
-        }
+
+        dbAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // User is signed in
+                    Log.d(TAG, "Signed in: " + user.getUid());
+                } else {
+                    // User is signed out
+                    Log.d(TAG, "Currently signed out");
+                }
+            }
+        };
+
 
         // Set up click handlers and view item references
         findViewById(R.id.cmdCreateUser).setOnClickListener(this);
@@ -77,10 +93,10 @@ public class Login extends AppCompatActivity
     @Override
     public void onStop() {
         super.onStop();
-        //Remove the auth listener on stop
-        if (dbAuthListener != null) {
-            dbAuth.removeAuthStateListener(dbAuthListener);
-        }
+//        //Remove the auth listener on stop
+//        if (dbAuthListener != null) {
+//            dbAuth.removeAuthStateListener(dbAuthListener);
+//        }
     }
 
     //Switch between buttons
@@ -89,24 +105,15 @@ public class Login extends AppCompatActivity
         switch (v.getId()) {
             //cmdLogIn listener
             case R.id.cmdLogIn:
+                Toast.makeText(Login.this, "LogIn", Toast.LENGTH_SHORT).show();
                 signUserIn();
                 break;
             //cmdCreateUser listener
             case R.id.cmdCreateUser:
+                Toast.makeText(Login.this, "Creation", Toast.LENGTH_SHORT).show();
                 createUserAccount();
                 break;
 
-            //If txtEmail is clicked for the first time, delete existing text
-            case R.id.txtEmail:
-                if (txtEmail.getText().equals("Brugernavn"))
-                    txtEmail.setText("");
-                break;
-
-            //If txtPassword is clicked for the first time, delete existing text
-            case R.id.txtPassword:
-                if (txtPassword.getText().equals("Brugernavn"))
-                    txtPassword.setText("");
-                break;
         }
     }
 
@@ -141,44 +148,33 @@ public class Login extends AppCompatActivity
         String password = txtPassword.getText().toString();
 
         // TODO: sign the user in with email and password credentials
-        dbAuth.signInWithEmailAndPassword(email, password)
+        dbAuth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this,
                         new OnCompleteListener<AuthResult>() {
-                            //Authentication sign-in listener
-
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                //Task: Authenticate email and password online
                                 if (task.isSuccessful()) {
-                                    //User can sign in
-                                    //Close activity and start Main Menu
-                                    finish();
-                                    startActivity(new Intent(getApplicationContext(), MainMenu.class));
-
-                                } else {
-
-                                    //Inform user that authentication failed
-                                    Toast.makeText(Login.this, "Sign in failed. Try again.", Toast.LENGTH_SHORT)
+                                    Toast.makeText(Login.this, "Signed in", Toast.LENGTH_SHORT)
+                                            .show();
+                                }
+                                else {
+                                    Toast.makeText(Login.this, "Sign in failed", Toast.LENGTH_SHORT)
                                             .show();
                                 }
                             }
                         })
-
                 .addOnFailureListener(new OnFailureListener() {
-                    //Authentication sign-in failure listener
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
-                        //Invalid password
                         if (e instanceof FirebaseAuthInvalidCredentialsException) {
                             Toast.makeText(Login.this, "Invalid password", Toast.LENGTH_SHORT)
                                     .show();
-
-                            //Invalid Email/user
-                        } else if (e instanceof FirebaseAuthInvalidUserException) {
-                            Toast.makeText(Login.this, "No account with this email", Toast.LENGTH_SHORT)
+                        }
+                        else if (e instanceof FirebaseAuthInvalidUserException) {
+                            Toast.makeText(Login.this, "No account with this email exists", Toast.LENGTH_SHORT)
                                     .show();
-                        } else {
+                        }
+                        else {
                             Toast.makeText(Login.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT)
                                     .show();
                         }
@@ -186,49 +182,37 @@ public class Login extends AppCompatActivity
                 });
     }
 
-
-    /**
-     * Creates new user, if the credentials are not already in use.
-     */
-    private void createUserAccount() {
-        //Check if fields have been populated
+        private void createUserAccount() {
         if (!checkFields())
             return;
 
         String email = txtEmail.getText().toString();
         String password = txtPassword.getText().toString();
 
-
-        //Create new user
+        // TODO: Create the user account
         dbAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    //Completion listener
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        //Task: verify that user doesn't already exist
-                        if (task.isSuccessful()) {
-
-                            //User is created
-                            Toast.makeText(Login.this, "Creation successful", Toast.LENGTH_SHORT).show();
-                            //Close activity and open Main Menu
-                            finish();
-                            startActivity(new Intent(getApplicationContext(), MainMenu.class));
-                        } else {
-                            //Inform user that creation failed
-                            Toast.makeText(Login.this, "User account creation failed", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                })
+                .addOnCompleteListener(this,
+                        new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(Login.this, "User created", Toast.LENGTH_SHORT)
+                                            .show();
+                                } else {
+                                    Toast.makeText(Login.this, "Account creation failed", Toast.LENGTH_SHORT)
+                                            .show();
+                                }
+                            }
+                        })
                 .addOnFailureListener(new OnFailureListener() {
-                    //Account creation failure listener
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
-                        //Collision listener - ensures the credentials are not already in use
+                        Log.e(TAG, e.toString());
                         if (e instanceof FirebaseAuthUserCollisionException) {
                             Toast.makeText(Login.this, "This email is already in use", Toast.LENGTH_SHORT)
                                     .show();
-                        } else {
+                        }
+                        else {
                             Toast.makeText(Login.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT)
                                     .show();
                         }

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/image_login"
+
+    tools:context="awesomegroupkolond.kontraktor.Login"
     >
 
     <EditText
