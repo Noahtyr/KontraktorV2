@@ -41,29 +41,15 @@ public class Login extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        dbAuth = FirebaseAuth.getInstance();
-//
-//        //If currentUser is not null, it's already logged in
-//        if (dbAuth.getCurrentUser() != null) {
-//            //Proceed to Main Menu
-//            finish();
-//            startActivity(new Intent(getApplicationContext(), MainMenu.class));
-//        }
+        dbAuth = FirebaseAuth.getInstance();
+
+        //If currentUser is not null, it's already logged in
+        if (dbAuth.getCurrentUser() != null) {
+            //Proceed to Main Menu
+            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+        }
 
 
-        dbAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    // User is signed in
-                    Log.d(TAG, "Signed in: " + user.getUid());
-                } else {
-                    // User is signed out
-                    Log.d(TAG, "Currently signed out");
-                }
-            }
-        };
 
 
         // Set up click handlers and view item references
@@ -72,11 +58,28 @@ public class Login extends AppCompatActivity
 
         //Assign txtemail and set OnClickListener
         txtEmail = (EditText) findViewById(R.id.txtEmail);
-        txtEmail.setOnClickListener(this);
+//        txtEmail.setOnClickListener(this);
 
         //Assign txtPassword and assign OnClickListener
         txtPassword = (EditText) findViewById(R.id.txtPassword);
-        txtPassword.setOnClickListener(this);
+//        txtPassword.setOnClickListener(this);
+
+
+//
+//        dbAuthListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    // User is signed in
+//                    Log.d(TAG, "Signed in: " + user.getUid());
+//                } else {
+//                    // User is signed out
+//                    Log.d(TAG, "Currently signed out");
+//                }
+//            }
+//        };
+
 
 
     }
@@ -86,7 +89,7 @@ public class Login extends AppCompatActivity
     public void onStart() {
         super.onStart();
         //Add db auth state listener on startup
-        dbAuth.addAuthStateListener(dbAuthListener);
+//        dbAuth.addAuthStateListener(dbAuthListener);
     }
 
 
@@ -94,9 +97,9 @@ public class Login extends AppCompatActivity
     public void onStop() {
         super.onStop();
 //        //Remove the auth listener on stop
-//        if (dbAuthListener != null) {
-//            dbAuth.removeAuthStateListener(dbAuthListener);
-//        }
+        if (dbAuthListener != null) {
+            dbAuth.removeAuthStateListener(dbAuthListener);
+        }
     }
 
     //Switch between buttons
