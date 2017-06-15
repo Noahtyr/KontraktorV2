@@ -6,6 +6,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by maria on 15-06-2017.
@@ -29,8 +30,12 @@ public FirebaseHandler(){
 
 }
 
-public void addCustomer(HashMap map){
-    rootRef.getRef().updateChildren(map);
+public void addCustomers(ArrayList<Kunde> kunde){
+    Map kundeMap = new HashMap();
+    for (Kunde k : kunde){
+        kundeMap.put(customerRef,kunde);
+    }
+    rootRef.getRef().updateChildren(kundeMap);
 }
 
     public ArrayList<Kunde> getCustomers() {
@@ -51,6 +56,12 @@ public void addCustomer(HashMap map){
         return kunder;
     }
 
+
+    public void addProjects(HashMap map){
+        rootRef.getRef().updateChildren(map);
+    }
+
+
     public ArrayList<Projekt> getProjects(){
 //get a snapshot of current data in "Projekt" in the database
         DataSnapshot projektSnapshot = dataSnapshot.child(projectRef.toString());
@@ -67,6 +78,11 @@ public void addCustomer(HashMap map){
 
 
         return projekter;
+    }
+
+
+    public void addContracts(HashMap map){
+        rootRef.getRef().updateChildren(map);
     }
 
     public ArrayList<Kontrakt> getContracts(){
@@ -87,6 +103,12 @@ public void addCustomer(HashMap map){
         return kontrakter;
     }
 
+
+    public void addCWorkers(HashMap map){
+        rootRef.getRef().updateChildren(map);
+    }
+
+
     public ArrayList<Medarbejder> getWorkers(){
 //get a snapshot of current data in "Medarbejder" in the database
         DataSnapshot medarbejderSnapshot = dataSnapshot.child(workerRef.toString());
@@ -105,6 +127,11 @@ public void addCustomer(HashMap map){
         return medarbejdere;
     }
 
+
+    public void addBranches(HashMap map){
+        rootRef.getRef().updateChildren(map);
+    }
+
     public ArrayList<Afdeling> getBranches(){
 //get a snapshot of current data in "Afdeling" in the database
         DataSnapshot afdelingSnapshot = dataSnapshot.child(branchRef.toString());
@@ -121,6 +148,10 @@ public void addCustomer(HashMap map){
 
 
         return afdelinger;
+    }
+
+    public void addCompany(HashMap map){
+        rootRef.getRef().updateChildren(map);
     }
 
     public ArrayList<Firma> getCompany(){
