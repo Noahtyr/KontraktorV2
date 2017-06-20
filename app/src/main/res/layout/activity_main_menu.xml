@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +8,16 @@
     android:background="@drawable/workshop_main_menu_background"
     >
 
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="127dp" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/cmdKontrakt"
+        app:layout_constraintTop_toBottomOf=
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Arbejdskontrakt"
@@ -17,7 +25,7 @@
         tools:layout_editor_absoluteY="78dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/cmdKalender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kalender"
@@ -25,7 +33,7 @@
         tools:layout_editor_absoluteY="171dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/cmdArbejdere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medarbejdere"
@@ -33,18 +41,11 @@
         tools:layout_editor_absoluteY="277dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cmdArbejderKontrakt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medarbejder Kontakt"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="395dp" />
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_begin="20dp"
-        android:orientation="vertical" />
-
-</RelativeLayout>
+</GridLayout>

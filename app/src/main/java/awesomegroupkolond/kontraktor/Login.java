@@ -40,30 +40,15 @@ public class Login extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-
-//        //If currentUser is not null, it's already logged in
-//        if (dbAuth.getCurrentUser() != null) {
-//            //Proceed to Main Menu
-//            startActivity(new Intent(getApplicationContext(), MainMenu.class));
-//        }
-
-
         // Set up click handlers and view item references
         findViewById(R.id.cmdCreateUser).setOnClickListener(this);
         findViewById(R.id.cmdLogIn).setOnClickListener(this);
 
         //Assign txtemail and set OnClickListener
         txtEmail = (EditText) findViewById(R.id.txtEmail);
-//        txtEmail.setOnClickListener(this);
 
         //Assign txtPassword and assign OnClickListener
         txtPassword = (EditText) findViewById(R.id.txtPassword);
-//        txtPassword.setOnClickListener(this);
-
-//       Intent intent =  new Intent(getApplicationContext(), MainMenu.class);
-//
-//        Login.this.startActivity(intent);
 
 
         dbAuth = FirebaseAuth.getInstance();
@@ -72,14 +57,13 @@ public class Login extends AppCompatActivity
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-//                    // User is signed in
-
-                    Toast.makeText(Login.this, "not null", Toast.LENGTH_SHORT).show();
-//
+                    // User is signed in
+                    Toast.makeText(Login.this, "Welcome " + firebaseAuth.getCurrentUser().getUid(),Toast.LENGTH_SHORT);
+                    //Proceed to Main Menu
+                    startActivity(new Intent(Login.this, MainMenu.class));
                 } else {
-//                    // User is signed out
-                    Toast.makeText(Login.this, "null", Toast.LENGTH_SHORT).show();
-//
+                    // User is signed out
+                    Toast.makeText(Login.this, "Logged out", Toast.LENGTH_SHORT).show();
                 }
             }
         };

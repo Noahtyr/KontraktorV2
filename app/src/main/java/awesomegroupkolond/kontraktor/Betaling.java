@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Betaling extends AppCompatActivity
-        implements View.OnClickListener {
+public class Betaling extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +20,5 @@ public class Betaling extends AppCompatActivity
     }
 
 
-    @Override
-    public void onClick(View view) {
 
-    }
 }
