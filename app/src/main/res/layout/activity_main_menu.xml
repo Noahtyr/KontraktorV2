@@ -4,46 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="awesomegroupkolond.kontraktor.MainMenu"
-    android:background="@drawable/workshop_main_menu_background"
-    >
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="127dp" />
+    android:background="@drawable/workshop_main_menu_background"
+    android:columnCount="1"
+    android:orientation="vertical"
+    tools:context="awesomegroupkolond.kontraktor.MainMenu">
 
     <Button
         android:id="@+id/cmdKontrakt"
-        app:layout_constraintTop_toBottomOf=
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_rowSpan="1"
+        android:background="@drawable/rounded_corner"
         android:text="Arbejdskontrakt"
         tools:layout_editor_absoluteX="127dp"
         tools:layout_editor_absoluteY="78dp" />
 
     <Button
         android:id="@+id/cmdKalender"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner"
         android:text="Kalender"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="171dp" />
 
     <Button
         android:id="@+id/cmdArbejdere"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner"
         android:text="Medarbejdere"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="277dp" />
 
     <Button
         android:id="@+id/cmdArbejderKontrakt"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner"
         android:text="Medarbejder Kontakt"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="395dp" />

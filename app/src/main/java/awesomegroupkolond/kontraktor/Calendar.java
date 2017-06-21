@@ -20,8 +20,8 @@ public class Calendar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
-        theDate = (TextView) findViewById(R.id.date);
-        btnGoCalendar = (Button) findViewById(R.id.btnGoCalendar);
+        theDate = (TextView) findViewById(R.id.lblDate);
+        btnGoCalendar = (Button) findViewById(R.id.cmdCalendar);
 
         Intent incomingIntent = getIntent();
         String date = incomingIntent.getStringExtra("date");
