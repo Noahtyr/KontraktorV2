@@ -77,13 +77,6 @@ AB-Forbruger §20."
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="93dp" />
 
-    <Button
-        android:id="@+id/cmdNæste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Næste"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="438dp" />
 
 
 </android.support.constraint.ConstraintLayout>

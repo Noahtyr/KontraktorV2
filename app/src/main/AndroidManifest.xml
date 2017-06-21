@@ -30,6 +30,7 @@
         <activity android:name=".CalendarActivity"/>
         <activity android:name=".Pris"/>
         <activity android:name=".Sikkerhedsstillelse"/>
+        <activity android:name=".AddImageActivity"/>
 
 
 

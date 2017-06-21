@@ -30,11 +30,7 @@ implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.cmdNæste:
-                startActivity(new Intent(this,aktivitet4.class));
-                break;
-        }
+
     }
 }
 
