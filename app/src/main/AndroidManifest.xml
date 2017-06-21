@@ -21,6 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainMenu"/>
+        <activity android:name=".aktivitet3"/>
+        <activity android:name=".aktivitet4"/>
+        <activity android:name=".Betaling"/>
+        <activity android:name=".Calendar"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".Pris"/>
+        <activity android:name=".Sikkerhedsstillelse"/>
+
+
+
     </application>
 
 </manifest>

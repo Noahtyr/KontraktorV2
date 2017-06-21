@@ -21,7 +21,4 @@ public class Betaling extends AppCompatActivity {
 
 
 
-
-
-
 }

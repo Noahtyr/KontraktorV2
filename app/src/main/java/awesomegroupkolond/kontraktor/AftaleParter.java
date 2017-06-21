@@ -3,13 +3,19 @@ package awesomegroupkolond.kontraktor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class aktivitet4 extends AppCompatActivity {
+/**
+ * Created by Maria on 20-06-2017.
+ */
+
+public class AftaleParter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aktivitet4);
+        setContentView(R.layout.activity_aftaleparter);
     }
+
+
 
     @Override
     public void onStart() {
@@ -20,6 +26,6 @@ public class aktivitet4 extends AppCompatActivity {
     @Override
     public void onStop() {
         super.onStop();
-
+        }
     }
-}
+
